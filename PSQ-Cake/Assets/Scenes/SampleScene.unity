@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  jumpForce: 10
   gameInput: {fileID: 992207578}
   rb: {fileID: 516397666}
 --- !u!70 &516397665
@@ -216,7 +217,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516397661}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -926,7 +927,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1011354233}
+  - {fileID: 992207579}
   - {fileID: 619394802}
   - {fileID: 1865608002}
   - {fileID: 516397662}
-  - {fileID: 992207579}
