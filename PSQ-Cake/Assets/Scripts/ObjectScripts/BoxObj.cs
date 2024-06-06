@@ -1,15 +1,25 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreadcrumbsObj : InteractableObj
+public class BoxObj : InteractableObj
 {
-
     public override void Interact()
     {
 
-        Hide();
+        if(Player.Instance.hasHammer == true) 
+        {
+
+            Hide();
+
+        }
+        else
+        {
+
+            Debug.Log("I need hamma!");
+
+        }
+        
 
     }
 

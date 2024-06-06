@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private float MoveHorizontal;
     private bool isFacingRight;
 
+    public bool hasHammer = false;
     public bool hasKey = false;
     public Animator animator;
 
@@ -186,7 +187,7 @@ public class Player : MonoBehaviour
 
     }
 
-    private bool isInteracting()
+    public bool isInteracting()
     {
         //Returns a bool if the below physics is interacting with an ojbect with the same layer
         return Physics2D.OverlapCircle(interactCheckObj.position, interactCheckRadius, interactLayer);

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5974496378253433559
+--- !u!1001 &34485575423306098
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1820356471188458894, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4176044
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1820356471188458894, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1820356471188458894, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50,22 +50,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4970404302157056336, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_Name
-      value: Breadcrumbs Variant
+      value: Breadcrumbs
       objectReference: {fileID: 0}
+    - target: {fileID: 6225199357085076534, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
+      propertyPath: interactableObj
+      value: 
+      objectReference: {fileID: 5511022600763953306}
     - target: {fileID: 8907739118156406540, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_Color.b
-      value: 0.071155205
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8907739118156406540, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_Color.g
-      value: 0.18251485
+      value: 0.17301823
       objectReference: {fileID: 0}
     - target: {fileID: 8907739118156406540, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
       propertyPath: m_Color.r
-      value: 0.3679245
+      value: 0.5660378
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 472824443297041393, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4970404302157056336, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5511022600763953306}
   m_SourcePrefab: {fileID: 100100000, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
+--- !u!1 &4936200357163180066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4970404302157056336, guid: 5b4d6f2716b5f50408c7eb16f49542f5, type: 3}
+  m_PrefabInstance: {fileID: 34485575423306098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5511022600763953306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936200357163180066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e38e1159ba8e04b8223f8febac076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

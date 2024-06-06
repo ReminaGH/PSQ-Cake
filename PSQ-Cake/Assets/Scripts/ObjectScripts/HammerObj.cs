@@ -1,15 +1,14 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreadcrumbsObj : InteractableObj
+public class HammerObj : InteractableObj
 {
-
     public override void Interact()
     {
 
         Hide();
+        Player.Instance.hasHammer = true;
 
     }
 
@@ -18,5 +17,4 @@ public class BreadcrumbsObj : InteractableObj
         this.gameObject.SetActive(false);
 
     }
-
 }
