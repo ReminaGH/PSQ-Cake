@@ -1,18 +1,25 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BreadcrumbsObj : InteractableObj
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+    public override void Interact()
     {
         
+        Debug.Log("Override Interact");
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void InteractAlt()
     {
         
+        Debug.Log("Override Interact Alt");
+        this.gameObject.SetActive(false);
+
     }
+
 }

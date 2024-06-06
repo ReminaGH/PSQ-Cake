@@ -10,8 +10,15 @@ public class LadderMovement : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
 
+    public Animator animator;
+
+
     [SerializeField] private Rigidbody2D rb;
 
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -22,6 +29,7 @@ public class LadderMovement : MonoBehaviour
         { 
         
         isClimbing = true;
+            animator.SetBool("isOnLadder", true);
 
         }
     }
@@ -47,7 +55,6 @@ public class LadderMovement : MonoBehaviour
         { 
         
             isLadder = true;
-            Debug.Log(isLadder);
 
         }
     }
@@ -60,7 +67,7 @@ public class LadderMovement : MonoBehaviour
 
             isLadder = false;
             isClimbing = false;
-            Debug.Log(isLadder);
+            animator.SetBool("isOnLadder", false);
 
         }
     }

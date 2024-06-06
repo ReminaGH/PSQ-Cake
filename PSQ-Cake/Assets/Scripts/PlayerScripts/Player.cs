@@ -30,8 +30,9 @@ public class Player : MonoBehaviour
     private float interactCheckRadius = 0.1f;
     private InteractableObj selectedObj;
     private float MoveHorizontal;
-    private Animator animator;
     private bool isFacingRight;
+
+    public Animator animator;
 
     private float GetVerticalSpeed() => rb.velocity.y;
 

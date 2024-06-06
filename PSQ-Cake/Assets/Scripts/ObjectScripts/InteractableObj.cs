@@ -7,23 +7,18 @@ public class InteractableObj : MonoBehaviour
     private GameInput gameInput;
 
 
-    public void Interact() {
-
-        Debug.Log("Interact: E");
-
+    public virtual void Interact() 
+    {
+        
     }
 
-    public void InteractAlt()
+    public virtual void InteractAlt()
     {
-
-        Debug.Log("Interact: F");
-        
 
     }
     private void Show()
     {
         
-
     }
     private void Hide()
     {
