@@ -61,7 +61,7 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 0}
+  animator: {fileID: 8595350605328457365}
 --- !u!50 &6665304538900800019
 Rigidbody2D:
   serializedVersion: 4
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57484512a0713c84e8f123d51fdfd91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 8595350605328457365}
   rb: {fileID: 6665304538900800019}
 --- !u!1 &1707262617748540598
 GameObject:

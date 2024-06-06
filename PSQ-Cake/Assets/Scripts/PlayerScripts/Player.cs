@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private float MoveHorizontal;
     private bool isFacingRight;
 
+    public bool hasKey = false;
     public Animator animator;
 
     private float GetVerticalSpeed() => rb.velocity.y;
@@ -93,6 +94,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        
         HandleInteraction();
         moveDir = gameInput.GetMovementNormalized();
 
