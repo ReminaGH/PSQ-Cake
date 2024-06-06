@@ -24,6 +24,7 @@ public class InteractObjVissual : MonoBehaviour
         {
             Hide();
         }
+        
     }
 
     private void Show()
