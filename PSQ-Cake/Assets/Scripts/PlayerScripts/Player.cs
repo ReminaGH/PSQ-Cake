@@ -30,8 +30,8 @@ public class Player : MonoBehaviour
     private float interactCheckRadius = 0.1f;
     private InteractableObj selectedObj;
     private float MoveHorizontal;
-    private bool isFacingRight;
-
+    
+    public bool isFacingRight;
     public bool hasHammer = false;
     public bool hasKey = false;
     public Animator animator;
@@ -238,13 +238,19 @@ public class Player : MonoBehaviour
         });
     }
 
-    public void Flip() {
+    public void Flip() 
+    {
 
         isFacingRight = !isFacingRight;
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
 
+    }
+
+    public bool WhichDirection() 
+    {
+        return isFacingRight;
     }
 
 }
