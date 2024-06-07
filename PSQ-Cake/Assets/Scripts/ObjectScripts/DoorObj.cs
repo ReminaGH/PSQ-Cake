@@ -14,7 +14,15 @@ public class DoorObj : InteractableObj
         }
        else
         {
-            ChatbubbleUI.Instance.AddText("I should get the key first!");
+            if (Player.Instance.canTalk == true)
+            {
+                
+                ChatbubbleUI.Instance.AddText("xI should get the key first!");
+            }
+            Player.Instance.canTalk = false;
+
+            StartCoroutine(DelayedActionCanTalk());
+            
         }
     }
     private void Show()
@@ -25,5 +33,13 @@ public class DoorObj : InteractableObj
     {
         this.gameObject.SetActive(false);
 
+    }
+
+    IEnumerator DelayedActionCanTalk()
+    {
+        // Delay for 3 seconds
+        yield return new WaitForSeconds(4);
+
+        Player.Instance.canTalk = true;
     }
 }

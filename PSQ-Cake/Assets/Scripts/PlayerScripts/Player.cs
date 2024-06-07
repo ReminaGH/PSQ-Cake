@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
     private InteractableObj selectedObj;
     private float MoveHorizontal;
     private bool canWalk = true;
-    
+
+    public bool canTalk = true;
     public bool isFacingRight;
     public bool hasHammer = false;
     public bool hasKey = false;

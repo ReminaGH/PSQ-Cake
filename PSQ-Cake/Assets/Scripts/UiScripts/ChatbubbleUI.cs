@@ -15,6 +15,8 @@ public class ChatbubbleUI : MonoBehaviour
 
     private Coroutine clearTextCoroutine;
     private Coroutine typingCoroutine;
+    private Color originalTextColor;
+    private Color originalBackgroundColor;
 
     public float fadeDuration = 1f;
     public float typingSpeed = 0.5f;
@@ -23,6 +25,12 @@ public class ChatbubbleUI : MonoBehaviour
     public Transform target;    
     public Vector3 offset;
 
+
+    private void Start()
+    {
+        originalTextColor = chatBubbleTextUIGUI.color;
+        originalBackgroundColor = chatBubbleBackground.color;
+    }
 
     private void Awake()
     {
@@ -42,8 +50,12 @@ public class ChatbubbleUI : MonoBehaviour
         transform.rotation = Quaternion.identity;
     }
 
+    //Currently a bug with the text writer, where it eats the first letter
+
+
     public void AddText(string text)
     {
+
         StartCoroutine(ResetColor());
 
         if (typingCoroutine != null)
@@ -55,8 +67,8 @@ public class ChatbubbleUI : MonoBehaviour
    
     private IEnumerator TypeText(string newText)
     {
-        
 
+        
         // Type out each character one by one
         foreach (char letter in newText.ToCharArray())
         {
@@ -104,19 +116,14 @@ public class ChatbubbleUI : MonoBehaviour
         chatBubbleBackground.color = originalPanelColor;
     }
 
-    private IEnumerator ResetColor() {
+    public IEnumerator ResetColor() {
 
         yield return new WaitForSeconds(clearTextAfterSecondsExtra);
 
-        
-        Color originalColor = chatBubbleTextUIGUI.color;
-        Color fadeColor = new Color(originalColor.r, originalColor.g, originalColor.b, 0);
-        Color originalPanelColor = chatBubbleBackground.color;
-        Color fadePanelColor = new Color(originalPanelColor.r, originalPanelColor.g, originalPanelColor.b, 0);
 
         chatBubbleTextUIGUI.text = string.Empty;
-        chatBubbleTextUIGUI.color = originalColor;
-        chatBubbleBackground.color = originalPanelColor;
+        chatBubbleTextUIGUI.color = originalTextColor;
+        chatBubbleBackground.color = originalBackgroundColor;
     }
 }
 
