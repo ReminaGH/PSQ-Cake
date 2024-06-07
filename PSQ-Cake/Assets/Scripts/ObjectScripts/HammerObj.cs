@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class HammerObj : InteractableObj
 {
+    private string HammerText;
+
     public override void Interact()
     {
 
         Hide();
         Player.Instance.hasHammer = true;
+
+    }
+
+    public override void InteractAlt()
+    {
+
+        HammerText = "xHammer!";
+        ChatbubbleUI.Instance.AddText(HammerText);
 
     }
 

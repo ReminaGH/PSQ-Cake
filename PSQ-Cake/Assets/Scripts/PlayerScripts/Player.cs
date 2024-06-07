@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     private float interactCheckRadius = 0.1f;
     private InteractableObj selectedObj;
     private float MoveHorizontal;
+    private bool canWalk = true;
     
     public bool isFacingRight;
     public bool hasHammer = false;
@@ -97,9 +98,11 @@ public class Player : MonoBehaviour
     {
         
         HandleInteraction();
-        moveDir = gameInput.GetMovementNormalized();
+        if(canWalk == true) { 
+            moveDir = gameInput.GetMovementNormalized();
+        }
 
-    }
+}
 
     private void FixedUpdate()
 
@@ -251,6 +254,21 @@ public class Player : MonoBehaviour
     public bool WhichDirection() 
     {
         return isFacingRight;
+    }
+
+    public void confusedAimationPlayed(float delayTime)
+    {
+        canWalk = false;
+        animator.SetBool("isConfused", true);
+        StartCoroutine(Delay(delayTime));
+    }
+
+    IEnumerator Delay(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        animator.SetBool("isConfused", false);
+        canWalk = true;
     }
 
 }

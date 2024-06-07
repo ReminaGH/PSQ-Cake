@@ -14,7 +14,7 @@ public class DoorObj : InteractableObj
         }
        else
         {
-            Debug.Log("I should get the key");
+            ChatbubbleUI.Instance.AddText("I should get the key first!");
         }
     }
     private void Show()

@@ -9,14 +9,14 @@ public class BoxObj : InteractableObj
 
         if(Player.Instance.hasHammer == true) 
         {
-
+            CakeVissualScript.Instance.animator.SetBool("isFound", true);
             Hide();
 
         }
         else
         {
 
-            Debug.Log("I need hamma!");
+            ChatbubbleUI.Instance.AddText("I think I left my hammer downstairs!");
 
         }
         
