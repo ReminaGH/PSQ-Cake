@@ -15,8 +15,12 @@ public class BoxObj : InteractableObj
         }
         else
         {
+            if (Player.Instance.canTalk == true) { 
+            ChatbubbleUI.Instance.AddText("xI think I left my hammer downstairs!");
+            }
+            Player.Instance.canTalk = false;
 
-            ChatbubbleUI.Instance.AddText("I think I left my hammer downstairs!");
+            StartCoroutine(DelayedActionCanTalk());
 
         }
         
@@ -27,6 +31,14 @@ public class BoxObj : InteractableObj
     {
         this.gameObject.SetActive(false);
 
+    }
+
+    IEnumerator DelayedActionCanTalk()
+    {
+        // Delay for 3 seconds
+        yield return new WaitForSeconds(4);
+
+        Player.Instance.canTalk = true;
     }
 
 }
