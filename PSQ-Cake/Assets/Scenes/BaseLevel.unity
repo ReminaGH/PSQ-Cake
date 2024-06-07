@@ -4765,7 +4765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1768319600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4850,8 +4849,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40.25}
-=======
->>>>>>> Stashed changes
 --- !u!1001 &1773261905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4866,7 +4863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
       propertyPath: m_fontSize
-      value: 2.5
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
       propertyPath: m_fontColor.b
@@ -4881,20 +4878,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
-      propertyPath: m_fontSizeMax
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
-      propertyPath: m_fontSizeMin
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
       propertyPath: m_fontSizeBase
       value: 3.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 741273601046787711, guid: 850089dc39cec8f49b206bf23dcbb375, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -5591,7 +5576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &2088387259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,8 +5660,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &2120187346
 GameObject:
   m_ObjectHideFlags: 0
