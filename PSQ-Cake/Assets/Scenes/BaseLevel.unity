@@ -3758,7 +3758,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1 &1768319600
 GameObject:
@@ -3846,8 +3845,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40.25}
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 893bcfee (Added Level outside background)
 =======
 >>>>>>> parent of 893bcfee (Added Level outside background)
 --- !u!1001 &1773261905
@@ -4590,7 +4587,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1 &2088387259
 GameObject:
@@ -4678,8 +4674,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 893bcfee (Added Level outside background)
 =======
 >>>>>>> parent of 893bcfee (Added Level outside background)
 --- !u!1 &2120187346
