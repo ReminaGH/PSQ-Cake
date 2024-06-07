@@ -16,14 +16,9 @@ public class HammerObj : InteractableObj
 
     public override void InteractAlt()
     {
-        if (Player.Instance.canTalk == true)
-        {
-            HammerText = "xHammer!";
-            ChatbubbleUI.Instance.AddText(HammerText);
-        }
-        Player.Instance.canTalk = false;
-     
-        StartCoroutine(DelayedActionCanTalk());
+
+        HammerText = "xHammer!";
+        ChatbubbleUI.Instance.AddText(HammerText);
 
     }
 
@@ -31,12 +26,5 @@ public class HammerObj : InteractableObj
     {
         this.gameObject.SetActive(false);
 
-    }
-    IEnumerator DelayedActionCanTalk()
-    {
-        // Delay for 3 seconds
-        yield return new WaitForSeconds(3);
-
-        Player.Instance.canTalk = true;
     }
 }
